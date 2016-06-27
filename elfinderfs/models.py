@@ -55,7 +55,8 @@ class AbstractNode(object):
         Node(root='Media', path='share/icons')
         '''
         if hash_:
-            root_hash, path_hash = hash_.split('_')
+            parts = hash_.split('_')
+            root_hash, path_hash = parts[-2], parts[-1]
             self._root = AbstractNode.decode(root_hash)
             self._path = AbstractNode.decode(path_hash)
         elif root and path:
