@@ -42,7 +42,7 @@ class ElfinderWidget(Widget):
         }
         self.options.update(kwargs.pop('options', {}))
         self.attrs = kwargs.get('attrs', {})
-        super().__init__(*args, **kwargs)
+        super(ElfinderWidget, self).__init__(*args, **kwargs)
 
     def render(self, name, value, attrs=None):
         attrs = attrs or {}
@@ -124,7 +124,7 @@ class SiteFilesAdmin(admin.ModelAdmin):
 
     def change_view(self, request, object_id=None, form_url='', extra_context=None):
         object_id = object_id or str(Site.objects.latest('domain').id)
-        return super().change_view(
+        return super(SiteFilesAdmin, self).change_view(
             request, object_id, form_url=form_url, extra_context=extra_context)
 
     def get_urls(self):
