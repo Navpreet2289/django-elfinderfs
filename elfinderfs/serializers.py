@@ -112,7 +112,7 @@ class ResizeCmdSerializer(SingleTargetCmdSerializer):
 
 class MultipleTargetsCmdSerializer(CmdSerializer):
     def get_fields(self):
-        fields = super().get_fields()
+        fields = super(MultipleTargetsCmdSerializer, self).get_fields()
         fields['targets[]'] = serializers.ListField(child=NodeField())
         return fields
 
