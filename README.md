@@ -85,6 +85,10 @@ Screenshots
 
 ![Default Django Admin](/defaultadmin.png)
 
-* Django Suit
+* Django Suit (original screenshot, from original repo)
 
 ![Django Suit](/suitadmin.png)
+
+* Django Suit (fixed, code from this repo)
+
+![Django Suit](/suitadmin-fixed.png)
