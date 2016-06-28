@@ -101,6 +101,7 @@ class ElfinderWidget(Widget):
             '/static/elfinder/js/jquery.cookie.js',
             '/static/elfinder/js/jquery-ui-1.11.1/jquery-ui.min.js',
             '/static/elfinder/js/elfinder.min.js',
+            '/static/elfinder/js/django-suit-ckeditor-compability.js',
         )
 
 
