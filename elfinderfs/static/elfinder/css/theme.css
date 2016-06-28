@@ -42,7 +42,8 @@
 .elfinder-contextmenu .ui-state-hover { background: #3875d7; color:#fff; }
 .elfinder-contextmenu .ui-state-hover .elfinder-contextmenu-arrow { background-image:url('../img/arrows-active.png'); }
 
-/* django-suit compability fixes */
+
+/* django suit compability */
 .inner-right-column {
     display: none;
 }
@@ -57,4 +58,8 @@
     box-sizing: border-box;
     display: block !important;
     margin-left: 0 !important;
+}
+
+.controls {
+    padding: 10px !important;
 }
